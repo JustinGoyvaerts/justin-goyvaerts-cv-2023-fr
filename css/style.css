@@ -1,0 +1,699 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
+/*--scrollbar--*/
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 0%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 100%);
+  border: solid 4px hsl(0, 0%, 0%);
+  border-radius: 1vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+}
+
+/*--scrollbar--*/
+
+body {
+  background-color: black;
+}
+
+section {
+  background-color: hsl(0, 0%, 100%);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  font-size: 3.5rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+h1 b {
+  background: linear-gradient(-90deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.number {
+  color: white !important;
+  -webkit-text-fill-color: white;
+}
+
+/*--nav--*/
+
+nav ul {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(0, 0, 0);
+  padding: 0.5vw;
+}
+
+#title {
+  width: 15vw;
+  color: hsl(0, 0%, 100%);
+  padding: 1.2vw 2vw 1vw 2vw;
+  border-radius: 0 0 1vw 1vw;
+  transform: translate(5vw, -4vw);
+  background-color: hsl(0, 0%, 0%);
+}
+
+nav ul li {
+  margin: 0.5vw 1vw;
+}
+
+nav ul li a {
+  padding: 0.5vw 1.5vw;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  border-radius: 1vw;
+  font-family: "Rubik", sans-serif;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(-45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+#nav-profiel {
+  visibility: hidden;
+}
+
+#burger {
+  visibility: hidden;
+}
+
+header label {
+  visibility: hidden;
+}
+
+
+/*--nav--*/
+
+/*--splash--*/
+
+.splash {
+  background-image: linear-gradient(
+      45deg,
+      hsla(0, 0%, 0%, 0.5),
+      hsla(0, 0%, 0%, 0.9)
+    ),
+    url(../img/IMG_1158.jpg);
+  background-size: cover;
+  height: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.splash div {
+  padding: 0 2rem;
+}
+
+.favicon {
+  display: none;
+}
+
+.profiel-txt {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2rem;
+  width: 30%;
+  text-align: justify;
+  color: hsl(0, 0%, 100%);
+}
+
+
+/*--splash--*/
+
+/*--ervaring--*/
+
+.opleiding-txt {
+  display: flex;
+  height: 30rem;
+  margin: 0 5vw 0 5vw;
+  padding-top: 5vw;
+  font-family: "Heebo", sans-serif;
+}
+
+.ervaring-txt {
+  display: flex;
+  height: 35rem;
+  margin: 0 5vw 0 5vw;
+  padding-bottom: 5rem;
+  font-family: "Heebo", sans-serif;
+}
+
+#ervaring b {
+  color: hsl(0, 0%, 17%);
+}
+
+.left-col {
+  width: 50%;
+}
+
+.right-col {
+  width: 50%;
+}
+.img-bg-opleiding {
+  background-image: url(../img/debby-hudson-asviIGR3CPE-unsplash.jpg);
+  background-size: cover;
+  background-position: 0 -8vw;
+}
+
+.col-txt {
+  text-align: center;
+  margin: auto 0 auto 0;
+}
+
+.img-bg-ervaring {
+  background-image: url(../img/ux-indonesia-qC2n6RQU4Vw-unsplash.jpg);
+  background-size: cover;
+}
+
+/*--ervaring--*/
+
+/*--kennis--*/
+
+.container-bar {
+  width: 100%;
+  background: linear-gradient(
+    145deg,
+    hsla(0, 0%, 100%, 0.5),
+    hsla(0, 0%, 100%, 0.2)
+  );
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.skills {
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem 0 0 1rem;
+  font-size: 1.5rem;
+  font-family: "Heebo", sans-serif;
+}
+
+.skills p {
+  margin-bottom: 0.5rem;
+}
+
+.skill-columns {
+  display: inline-flex;
+}
+
+.skill-columns div {
+  margin-right: 10em;
+}
+
+.nl {
+  padding: 0rem 1rem;
+  width: 90%;
+  background: linear-gradient(-45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+.en {
+  padding: 0rem 1rem;
+  width: 85%;
+  background: linear-gradient(-45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+.fr {
+  padding: 0rem 1rem;
+  width: 65%;
+  background: linear-gradient(-45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+.adobe {
+  padding: 0rem 1rem;
+  width: 85%;
+  background: linear-gradient(-45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+.office {
+  padding: 0rem 1rem;
+  width: 90%;
+  background: linear-gradient(-45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+.web {
+  padding: 0rem 1rem;
+  width: 70%;
+  background: linear-gradient(-45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  color: hsl(0, 0%, 100%);
+}
+
+#kennis {
+  background: linear-gradient(-45deg, hsl(0, 0%, 17%), hsla(0, 0%, 5%));
+  padding: 7rem 0 2rem 0;
+}
+
+#kennis h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.kennis {
+  margin: 0 20% 10em 20%;
+}
+
+/*--kennis--*/
+
+/*--kenmerken--*/
+
+#kenmerken {
+  display: flex;
+  border-bottom: dotted 5px hsl(0, 0%, 17%);
+}
+
+#kenmerken article {
+  width: 50%;
+}
+
+.eigenschappen-txt {
+  padding: 5vw;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+}
+
+.eigenschappen-txt ul li {
+  font-size: 2rem;
+  color: hsl(224, 100%, 65%);
+}
+
+/*--kenmerken--*/
+
+/*--ref--*/
+
+.container-ref {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ref {
+  padding: 5vw;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+}
+
+.ref img {
+  margin-top: 3vw;
+  width: 10vw;
+}
+
+.ref-div {
+  width: 100%;
+  background: linear-gradient(45deg, hsl(0, 0%, 17%), hsla(0, 0%, 5%));
+  padding: 2vw;
+  height: 30vw;
+  width: 20vw;
+  border-radius: 1vw;
+  color: hsl(0, 0%, 100%);
+}
+
+/*--ref--*/
+
+/*--footer--*/
+
+footer {
+  color: hsl(0, 0%, 100%);
+  font-family: "Heebo", sans-serif;
+  padding: 5vw;
+  background: linear-gradient(45deg, hsl(0, 0%, 17%), hsla(0, 0%, 5%));
+  display: flex;
+}
+
+.fas {
+  margin-right: 1rem;
+}
+
+footer div {
+  width: 50%;
+  height: 100%;
+}
+
+.social {
+  display: flex;
+  justify-content: right;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.social ul li {
+  padding: 0 2rem;
+}
+
+.social ul li i {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(
+    100deg,
+    hsl(32, 90%, 51%),
+    hsl(325, 100%, 50%),
+    hsl(298, 83%, 38%)
+  );
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook-f:hover {
+  background: linear-gradient(45deg, hsl(224, 100%, 50%), hsl(224, 100%, 65%));
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-linkedin-in:hover {
+  background: linear-gradient(45deg, hsl(224, 63%, 41%), hsl(224, 51%, 39%));
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*--footer--*/
+
+@media (max-width: 1400px) {
+  .profiel-txt {
+    width: 70%;
+    text-align: justify;
+  }
+
+  .splash {
+    height: 60vw;
+  }
+}
+
+@media (max-width: 700px) {
+  * {
+    scroll-padding-top: 0;
+  }
+
+  /*--scrollbar--*/
+
+  body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 100%);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 65%);
+    border: none;
+    border-radius: 0;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      45deg,
+      hsl(224, 100%, 50%),
+      hsl(224, 100%, 65%)
+    );
+  }
+
+  /*--scrollbar--*/
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  /*--nav--*/
+
+  #title {
+    display: none;
+  }
+
+  #nav-profiel {
+    visibility: visible;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    background: none;
+    padding: 0 0 10vw 0;
+  }
+
+  nav ul li a {
+    padding: 1vw 3vw;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-family: "Heebo", sans-serif;
+    font-size: 2rem;
+  }
+
+  nav ul li a:hover {
+    color: hsl(224, 100%, 65%);
+    background: none;
+  }
+
+  header {
+    position: fixed !important;
+    background: linear-gradient(
+      170deg,
+      hsla(0, 0%, 0%, 0.8),
+      hsla(0, 0%, 0%, 0.6)
+    );
+    width: 100%;
+    backdrop-filter: blur(1px);
+  }
+
+  #burger {
+    visibility: visible !important;
+  }
+
+  header label {
+    visibility: visible !important;
+  }
+
+  header nav {
+    display: none !important;
+  }
+
+  input#burger:checked + nav {
+    display: contents !important;
+    z-index: 101 !important;
+    overflow-y: auto !important;
+  }
+
+  header input {
+    display: none !important;
+  }
+
+  i.fa-bars {
+    padding: 5vw 5vw 5vw 6vw;
+    font-size: 1rem !important;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%) !important;
+    transition: ease-in-out 0.3s all !important;
+    text-shadow: 0 0 1rem hsl(0, 0%, 0%, 0.5) !important;
+  }
+
+  span {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem !important;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    justify-self: center;
+  }
+
+  /*--nav--*/
+
+  /*--splash--*/
+
+  .splash {
+    background-size: 250%;
+    height: 210vw;
+    background-size: cover;
+  }
+
+  .profiel-txt {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: justify;
+    padding-top: 0 !important;
+  }
+
+  /*--splash--*/
+
+  /*--ervaring--*/
+
+  .opleiding-txt {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 47rem;
+    padding-top: 0;
+  }
+
+  .col-txt {
+    margin: auto 0 auto 0;
+  }
+
+  .left-col {
+    width: 100%;
+  }
+
+  .right-col {
+    width: 100%;
+  }
+
+  .ervaring-txt {
+    display: flex;
+    flex-direction: column;
+    height: 52rem;
+  }
+
+  .img-bg-opleiding {
+    height: 60vw;
+    background-position: 0 -8vw;
+    background-attachment: scroll;
+  }
+
+  .img-bg-ervaring {
+    height: 60vw;
+    background-attachment: scroll;
+  }
+
+  /*--ervaring--*/
+
+  /*--kennis--*/
+
+  .kennis {
+    margin: 0 11% 10em 11%;
+  }
+
+  /*--kennis--*/
+
+  /*--kenmerken--*/
+
+  #kenmerken {
+    flex-direction: column;
+  }
+  #kenmerken article {
+    width: 100%;
+  }
+
+  .hobbies {
+    margin-bottom: 10vw;
+  }
+
+  .eigenschappen-txt ul li {
+    font-size: 2rem;
+  }
+
+  /*--kenmerken--*/
+
+  /*--ref--*/
+
+  .container-ref {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ref-div {
+    margin-bottom: 2vw;
+  }
+
+  .ref-div {
+    margin: 2rem;
+    padding: 4vw;
+    height: 65vw;
+    width: 70vw;
+    border-radius: 2vw;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .ref img {
+    margin-top: 3vw;
+    width: 30vw;
+  }
+
+  /*--ref--*/
+
+  /*--footer--*/
+
+  footer {
+    padding: 20vw 5vw 5vw 5vw;
+    flex-direction: column;
+  }
+
+  footer div {
+    width: 100%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social ul {
+    flex-direction: row;
+  }
+
+  .social ul li {
+    padding: 5rem 2rem 1.5rem 3rem;
+  }
+
+  .social ul li i {
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+  }
+
+  /*--footer--*/
+}
